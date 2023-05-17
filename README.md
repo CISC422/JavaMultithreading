@@ -62,9 +62,9 @@ thread executing them; threads attempting to enter a synchronized
 block during that time will be blocked. Should the code block 
 or method be static, the class that the block or method is part
 of serves as the monitor (as in, e.g., 
-[<tt>SynchronizedOnIntVar.java</tt>]([src/main/java/SynchronizedOnIntVar.java)).
+[<tt>SynchronizedOnIntVar.java</tt>](src/main/java/SynchronizedOnIntVar.java)).
 
-#### Via wait() and notify()
+#### Via `wait()` and `notify()`
 
 Threads often share data (memory) which they access via shared variables. 
 A thread's ability to perform a certain computation often requires this 
