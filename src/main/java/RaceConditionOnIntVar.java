@@ -7,7 +7,7 @@
 
 public class RaceConditionOnIntVar {
 //    public static final int NUM_INCREMENTS = 100;   // might have to experiment w/ different values
-    public static final int NUM_INCREMENTS = 1000;   // might have to experiment w/ different values
+    public static final int NUM_INCREMENTS = 10000;   // might have to experiment w/ different values
     public static int x = 0;   // shared variable
     static class T extends Thread {
         private int id;
