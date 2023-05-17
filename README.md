@@ -3,7 +3,7 @@
 
 ### Multi-threading
 
-_**Multi-threading**_ allows the joint, concurrent execution of two or more parts of a program. 
+_Multi-threading_ allows the joint, concurrent execution of two or more parts of a program. 
 Each part is called a _thread_. Java supports multi-threading via its `Thread` class and 
 `Runnable` interface. The purpose of multi-threading typically is to leverage the presence 
 of multiple cores or CPUs to increase performance and utilization.
@@ -26,7 +26,7 @@ to variables of type int are atomic, no additional
 restrictions on the access to the shared variable `x` are imposed. 
 In both programs, `x` is initialized to 0 and then two threads perform
 a specific number of increments (`NUM_INCREMENTS`) on `x`. 
-Our expectation is that `x` has value 2*NUM_INCREMENTS upon program 
+Our expectation is that `x` has value `2*NUM_INCREMENTS` upon program 
 termination. However, in both programs it is possible that the
 scheduler interrupts a thread during the execution of an increment:
 more precisely, right after the current value of `x` has been read, and
