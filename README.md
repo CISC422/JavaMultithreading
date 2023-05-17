@@ -20,7 +20,9 @@ scheduler), unless the variable assigned to has type `long` or `double`.
 ### Race conditions
 Typically, these built-in restrictions are insufficient to ensure
 proper access to the shared data and correct executions. 
-Programs `RaceConditionOnIntVar` and `RaceConditionOnLongVar` illustrate 
+Programs [<tt>RaceConditionOnIntVar.java</tt>](src/main/java/RaceConditionOnIntVar.java) 
+and [<tt>RaceConditionOnLongVar.java</tt>](src/main/java/RaceConditionOnLongVar.java)
+illustrate 
 this situation. Apart from the built-in restriction that assignments
 to variables of type int are atomic, no additional 
 restrictions on the access to the shared variable `x` are imposed. 
