@@ -35,16 +35,17 @@ more precisely, right after the current value of `x` has been read, and
 before the incremented value is written back into `x`. In this case, 
 increments can 'get lost' and `x` ends up with a value less than
 expected.
+
 Since the behaviour of the scheduler may change from
 one invocation to the next, if and when these race conditions occur
 is not predictable making it possible the programs exhibit 
 _non-deterministic behaviour_, i.e., repeated invocations
 can cause different executions each of which leaves `x` with 
 a different final value.
+
 Thread schedules causing bugs are called _race conditions_.
 Multi-threaded programs with the potential for race conditions are 
 called _not thread safe_. 
-
 Programs [<tt>A4Part2v1.java</tt>](src/main/java/A4Part2v1.java) and
 [<tt>A4Part2v2.java</tt>](src/main/java/A4Part2v2.java) also illustrate race conditions, 
 but in the context of the barrier synchronization problem. 
