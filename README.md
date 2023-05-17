@@ -43,8 +43,8 @@ Thread schedules causing bugs are called _race conditions_.
 Multi-threaded programs with the potential for race conditions are 
 called _not thread safe_. 
 
-Programs [<tt>src/main/java/A4Part2v1.java</tt>](src/main/java/A4Part2v1.java) and
-[<tt>src/main/java/A4Part2v2.java</tt>]([src/main/java/A4Part2v2.java) also illustrate race conditions, 
+Programs [<tt>A4Part2v1.java</tt>](src/main/java/A4Part2v1.java) and
+[<tt>A4Part2v2.java</tt>](src/main/java/A4Part2v2.java) also illustrate race conditions, 
 but in the context of the barrier synchronization problem. 
 
 ### Synchronization and thread safety
@@ -52,7 +52,7 @@ To make multi-threaded programs thread safe, i.e., remove any
 possibility of undesired thread schedules leading to incorrect
 results, synchronization is used.
 
-#### Via 'synchronized()'
+#### Via `synchronized()`
 In Java, every object created has a lock (also called _intrinsic lock_, 
 _monitor lock_, or _just monitor_) associated with it. Code blocks or 
 methods of a class C labeled with the `synchronized` keyword will be 
@@ -62,7 +62,7 @@ thread executing them; threads attempting to enter a synchronized
 block during that time will be blocked. Should the code block 
 or method be static, the class that the block or method is part
 of serves as the monitor (as in, e.g., 
-[<tt>src/main/java/SynchronizedOnIntVar.java</tt>]([src/main/java/SynchronizedOnIntVar.java)).
+[<tt>SynchronizedOnIntVar.java</tt>]([src/main/java/SynchronizedOnIntVar.java)).
 
 #### Via wait() and notify()
 
@@ -114,10 +114,10 @@ complete the execution of `wait()`. Lots of information on concurrent programmin
 available, including \[1\] and \[2\].
 
 ### Barrier synchronization
-Program [**<tt>src/main/java/A4Part4.java</tt>](src/main/java/A4Part4.java)
+Program [<tt>A4Part4.java</tt>](src/main/java/A4Part4.java)
 illustrates incorrect implementations of reusable (cyclic) barriers. 
-Programs [**<tt>src/main/java/A4Part5.java</tt>](src/main/java/A4Part5.java)
-and [**<tt>src/main/java/A4Part6.java</tt>](src/main/java/A4Part6.java)
+Programs [<tt>A4Part5.java</tt>](src/main/java/A4Part5.java)
+and [<tt>A4Part6.java</tt>](src/main/java/A4Part6.java)
 show correct implementations. 
 
 ### References
