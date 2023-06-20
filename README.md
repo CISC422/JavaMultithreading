@@ -1,4 +1,4 @@
-# CISC/CMPE 422: Formal Methods in Software Engineering
+# CISC/CMPE 422/835: Formal Methods in Software Engineering
 ## Illustration of multithreading in Java, thread safety, and race conditions
 
 ### Multi-threading
